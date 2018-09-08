@@ -1,1 +1,4 @@
-spring.data.mongodb.uri=mongodb://root:root@localhost:27017/xian62_0
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:root@localhost:27017/xian62_0
