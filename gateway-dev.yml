@@ -1,1 +1,12 @@
-
+spring:
+  cloud:
+    gateway:
+      default-filters:
+      routes:
+      #------------------------------------------------------------------------
+      - id: pay
+        uri: lb://pay
+        predicates:
+        - Path= /pay/**
+        filters:
+        - StripPrefix= 1
