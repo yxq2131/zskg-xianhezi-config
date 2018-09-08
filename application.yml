@@ -4,7 +4,7 @@ logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %p [%F:%L] %m%n"
     file: "%d{yyyy-MM-dd HH:mm:ss.SSS} %p [%F:%L] %m%n"
-  file: D://logs/hyb-${spring.application.name}.log
+  file: D://logs/xhz-${spring.application.name}.log
 eureka:
   instance:
     prefer-ip-address: true                       # 设置微服务调用地址为IP优先（缺省为false）
