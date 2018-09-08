@@ -10,3 +10,10 @@ spring:
         - Path= /pay/**
         filters:
         - StripPrefix= 1
+      #------------------------------------------------------------------------
+      - id: message
+        uri: lb://message
+        predicates:
+        - Path= /message/**
+        filters:
+        - StripPrefix= 1
