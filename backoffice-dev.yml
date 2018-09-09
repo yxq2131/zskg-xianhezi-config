@@ -1,0 +1,17 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: backoffice
+  redis:
+    database: 0
+    host: hyb-test-vm00.huayingbaolicai.com
+    port: 6379
+    password: null
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    timeout: 1000
