@@ -1,8 +1,6 @@
 server:
   port: 9000
 spring:
-  application:
-    name: api
   data:
     mongodb:
       uri: mongodb://root:root@localhost:27017/xian62_0
