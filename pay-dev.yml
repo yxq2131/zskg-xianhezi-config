@@ -1,8 +1,6 @@
 server:
   port: 9001
 spring:
-  application:
-    name: pay
   data:
     mongodb:
       uri: mongodb://root:root@localhost:27017/xian62_0
