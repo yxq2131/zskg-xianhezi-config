@@ -1,8 +1,6 @@
 server:
   port: 9002
 spring:
-  application:
-    name: backoffice
   data:
     mongodb:
       uri: mongodb://root:root@localhost:27017/xian62_0
