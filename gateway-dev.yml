@@ -1,8 +1,19 @@
+server:
+  port: 80
 spring:
+  application:
+    name: gateway
   cloud:
     gateway:
       default-filters:
       routes:
+      #------------------------------------------------------------------------
+      - id: api
+        uri: lb://api
+        predicates:
+        - Path= /api/**
+        filters:
+        - StripPrefix= 1
       #------------------------------------------------------------------------
       - id: pay
         uri: lb://pay
@@ -11,9 +22,9 @@ spring:
         filters:
         - StripPrefix= 1
       #------------------------------------------------------------------------
-      - id: message
-        uri: lb://message
+      - id: backoffice
+        uri: lb://backoffice
         predicates:
-        - Path= /message/**
+        - Path= /backoffice/**
         filters:
         - StripPrefix= 1
