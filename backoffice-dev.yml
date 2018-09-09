@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: backoffice
+  data:
+    mongodb:
+      uri: mongodb://root:root@localhost:27017/xian62_0
   redis:
     database: 0
     host: hyb-test-vm00.huayingbaolicai.com
