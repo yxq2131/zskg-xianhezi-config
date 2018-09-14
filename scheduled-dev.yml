@@ -1,0 +1,18 @@
+server:
+  port: 9003
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:root@localhost:27017/xian62_0
+  redis:
+    database: 0
+    host: hyb-test-vm00.huayingbaolicai.com
+    port: 6379
+    password: null
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    timeout: 1000
